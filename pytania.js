@@ -3,7 +3,7 @@ const bazaDanychZadan_v2 = [
     {
     pytanko: "W ciągu arytmetycznym a₁ = 3 oraz a₂₀ = 27. Wtedy suma S₂₀ = a₁ + a₂ + ... + a₁₉ + a₂₀ jest równa:",
     opcje: ["A. 95", "B. 200", "C. 300", "D. 100"],
-    poprawna_indeks: 2, // Zmiana na 2 (czyli opcja C)
+    poprawna_indeks: 2, 
     wyjasnienie: "Korzystamy ze wzoru na sumę n początkowych wyrazów ciągu arytmetycznego: Sₙ = [(a₁ + aₙ) / 2] * n.<br>Dla n = 20 podstawiamy dane z zadania:<br>S₂₀ = [(a₁ + a₂₀) / 2] * 20<br>S₂₀ = [(3 + 27) / 2] * 20<br>S₂₀ = [30 / 2] * 20 = 15 * 20 = 300.<br>Prawidłowa odpowiedź to C."
     },
     {
@@ -14,9 +14,9 @@ const bazaDanychZadan_v2 = [
     },
     {
         pytanko: "Liczby 2, x, 18 w podanej kolejności są pierwszym, drugim i trzecim wyrazem ciągu geometrycznego. Liczba x może być równa:",
-        opcje: ["A. 6", "B. 9", "C. 10", "D. 4"],
+        opcje: ["A. 6 lub -6", "B. 9 lub -9", "C. 10", "D. 4"],
         poprawna_indeks: 0,
-        wyjasnienie: "W ciągu geometrycznym kwadrat wyrazu środkowego jest równy iloczynowi sąsiednich wyrazów: x² = a₁ * a₃.<br>Zatem: x² = 2 * 18 = 36.<br>Pierwiastkując, otrzymujemy x = 6 lub x = -6. W opcjach mamy liczbę 6.<br>Prawidłowa odpowiedź to A."
+        wyjasnienie: "W ciągu geometrycznym kwadrat wyrazu środkowego jest równy iloczynowi sąsiednich wyrazów: x² = a₁ * a₃.<br>Zatem: x² = 2 * 18 = 36.<br>Pierwiastkując, otrzymujemy x = 6 lub x = -6.<br>Prawidłowa odpowiedź to A."
     },
 {
         pytanko: "W nieskończonym ciągu arytmetycznym (aₙ) określonym dla n ≥ 1, suma jedenastu początkowych wyrazów tego ciągu jest równa 187. Średnia arytmetyczna pierwszego, trzeciego i dziewiątego wyrazu tego ciągu jest równa 12. Wyrazy a₁, a₃, aₖ ciągu (aₙ), w podanej kolejności, tworzą nowy, trzywyrazowy ciąg geometryczny. Oblicz k:",
