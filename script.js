@@ -4,7 +4,6 @@ let licznik_pytanek = 0;
 let zdobyte_punkty = 0;
 let czy_kliknal_odpowiedz = false;
 
-// Losowanie kolejności pytań (Fisher-Yates Shuffle)
 function przetasujTablice(tablica) {
     for (let i = tablica.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -46,39 +45,42 @@ function wczytajNowePytanie() {
     pasek_progresu.style.width = procent_progresu + "%";
 
     for (let i = 0; i < daneAktualne.opcje.length; i++) {
-        const nowy_guzior = document.createElement('button');
-        nowy_guzior.innerText = daneAktualne.opcje[i];
-        nowy_guzior.classList.add('btn_odp_wzorzec');
+        const przyciskOdpowiedzi = document.createElement('button');
+        przyciskOdpowiedzi.innerText = daneAktualne.opcje[i];
+        przyciskOdpowiedzi.classList.add('btn_odp_wzorzec');
         
-        nowy_guzior.addEventListener('click', function() {
-            sprawdzankoOdpowiedzi(i, nowy_guzior);
+        przyciskOdpowiedzi.addEventListener('click', function() {
+            sprawdzOdpowiedz(i, przyciskOdpowiedzi);
         });
-        kontener_na_guziki.appendChild(nowy_guzior);
+        kontener_na_guziki.appendChild(przyciskOdpowiedzi);
     }
 }
 
-function sprawdzankoOdpowiedzi(wybranyIndeks, kliknietyGuzik) {
+function sprawdzOdpowiedz(wybranyIndeks, kliknietyGuzik) {
     if (czy_kliknal_odpowiedz) return;
     czy_kliknal_odpowiedz = true;
 
     guzik_pomin.classList.add('ukryj_to');
 
-    let poprawneIdx = bazaDanychZadan_v2[licznik_pytanek].poprawna_indeks;
+    let poprawnyIdx = bazaDanychZadan_v2[licznik_pytanek].poprawna_indeks;
     const wszystkieGuziki = kontener_na_guziki.getElementsByTagName('button');
 
     historia_wyborow_ucznia[licznik_pytanek] = wybranyIndeks;
 
-    if (wybranyIndeks === poprawneIdx) {
+    if (wybranyIndeks === poprawnyIdx) {
         kliknietyGuzik.classList.add('git_odpowiedz');
         zdobyte_punkty++;
     } else {
         kliknietyGuzik.classList.add('lipa_odpowiedz');
-        wszystkieGuziki[poprawneIdx].classList.add('git_odpowiedz');
     }
 
     for (let j = 0; j < wszystkieGuziki.length; j++) {
+        if (j === poprawnyIdx) {
+            wszystkieGuziki[j].classList.add('git_odpowiedz');
+        }
         wszystkieGuziki[j].disabled = true;
     }
+    
     guzik_dalej.classList.remove('ukryj_to');
 }
 
