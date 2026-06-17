@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyniki Quizu  </title>
+    <link rel="stylesheet" href="wynik.css">
+</head>
+<body>
+
+    <div class="glowny_szkielet_13">
+        <div id="ekran_koncowy_wyniki">
+            <div class="podsumowanie_box_final">
+                <h2>Koniec Quizu!</h2>
+                <p style="margin-top: 10px; color: #a0a0b0;">Twój wynik:</p>
+                <div class="wynik_liczba_duza" id="id_punkty_cyfra">0 / 0</div>
+                <div class="ocena_tekst" id="info_od_nauczyciela">Wczytywanie oceny...</div>
+                
+                <button class="btn_restart_szablon" onclick="window.location.href='index.html'">Rozpocznij quiz od nowa</button>
+            </div>
+
+            <hr style="border: 1px solid #3e3e50; margin: 30px 0;">
+
+            <h3>Odpowiedzi Wyjaśnione:</h3>
+            <div id="lista_wynikow_szczegoly"></div>
+        </div>
+    </div>
+
+    <div class="footer-podpis">
+        Ciągi Arytmetyczne i Geometryczne - Szymon Ziniewicz
+    </div>
+
+    <script src="pytania.js" defer></script> 
+    <script src="wyniki.js" defer></script>
+</body>
+</html>

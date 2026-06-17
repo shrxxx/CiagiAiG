@@ -1,0 +1,123 @@
+body {
+    background-color: #1e1e24;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.glowny_szkielet_13 {
+    background-color: #2a2a35;
+    border-radius: 12px;
+    padding: 30px;
+    width: 100%;
+    max-width: 700px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+
+.podsumowanie_box_final {
+    text-align: center;
+    background-color: #23232e;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #3e3e50;
+}
+
+.wynik_liczba_duza {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #2ecc71;
+    margin: 15px 0;
+    text-shadow: 0 0 10px rgba(46, 204, 113, 0.2);
+}
+
+.ocena_tekst {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #f1c40f;
+    margin-bottom: 25px;
+}
+
+.btn_restart_szablon {
+    background: linear-gradient(135deg, #3498db, #2980b9);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn_restart_szablon:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.4);
+}
+
+.karta_zadania_koniec {
+    background-color: #3e3e50;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 6px solid #7f8c8d;
+}
+
+.status_dobrze { border-left-color: #2ecc71; }
+.status_zle { border-left-color: #e74c3c; }
+
+.karta_zadania_koniec h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.wybory_ucznia_info {
+    background-color: #2a2a35;
+    padding: 12px;
+    border-radius: 6px;
+    margin: 15px 0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.guzik_wyjasnienia_styl {
+    background-color: transparent;
+    color: #3498db;
+    border: 1px solid #3498db;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+
+.guzik_wyjasnienia_styl:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.tresc_wyjasnienia_box {
+    background-color: #1e1e24;
+    padding: 15px;
+    border-radius: 6px;
+    margin-top: 15px;
+    border-left: 3px solid #3498db;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #d1d1d6;
+}
+
+.ukryj_to {
+    display: none !important;
+}
+
+.footer-podpis {
+    margin-top: 30px;
+    color: #555566;
+    font-size: 0.9rem;
+}
