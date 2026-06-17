@@ -14,9 +14,9 @@ const bazaDanychZadan_v2 = [
     },
     {
         pytanko: "Liczby 2, x, 18 w podanej kolejności są pierwszym, drugim i trzecim wyrazem ciągu geometrycznego. Liczba x może być równa:",
-        opcje: ["A. 6", "B. 9", "C. 10", "D. 4"],
+        opcje: ["A. 6 lub -6", "B. 9", "C. 10 lub -10", "D. 4 lub -4"],
         poprawna_indeks: 0,
-        wyjasnienie: "W ciągu geometrycznym kwadrat środkowego wyrazu to iloczyn sąsiednich wyrazów: x² = a₁ * a₃.<br>Podstawiamy liczby: x² = 2 * 18 = 36.<br>Pierwiastkujemy i mamy dwa rozwiązania: 6 lub -6. W opcjach jest tylko na plusie, więc bierzemy 6. Odp A."
+        wyjasnienie: "W ciągu geometrycznym kwadrat środkowego wyrazu to iloczyn sąsiednich wyrazów: x² = a₁ * a₃.<br>Podstawiamy liczby: x² = 2 * 18 = 36.<br>Pierwiastkujemy i mamy dwa rozwiązania: 6 lub -6. więc bierzemy Odp A."
     },
     {
         pytanko: "Dany jest ciąg geometryczny o wyrazach 2, 6, x+2. Liczba x jest równa:",
